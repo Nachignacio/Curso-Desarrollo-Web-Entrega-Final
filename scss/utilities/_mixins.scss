@@ -1,0 +1,17 @@
+@mixin footerin($hf, $left, $space){ /*hf: altura foto, left: ubicacion desde la izquierda, space: espaciado desde el centro*/
+    display: inline-block;
+    position: absolute;
+    height: $hf;
+    width: $hf;
+    left: $left;
+    transform: translateX(-$hf/2+$hf*$space);
+}
+
+@mixin footerintexto($ht, $left, $space){ /*hf: altura texto, left: ubicacion desde la izquierda, space: espaciado desde el centro*/
+    color: rgb(151, 79, 69);
+    display: inline;
+    position: absolute;
+    top: 35px;
+    left: $left;
+    transform: translateX(-$ht/2+$ht*$space);
+}

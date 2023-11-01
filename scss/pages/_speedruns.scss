@@ -1,0 +1,14 @@
+.speedruns {
+    /*Espaciado entre navegador y primer texto en Speedruns*/
+    margin-left: 20px;
+
+    /*Espaciado entre parrafo y videos de Speedruns*/
+    p {
+        padding-bottom: 10px;
+    }
+
+    #noupload {
+        font-style: italic;
+        color: rgb(27, 23, 23);
+    }
+}

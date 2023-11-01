@@ -1,0 +1,24 @@
+/*Para darle un espacio entre el primer texto de Contacts con el navegador, y margen al texto*/
+.socialmedia {
+    margin-left: 20px;
+
+    div {
+
+        /*Para ordenar los items "Instagram, YouTube, etc..."*/
+        #socialmedialist {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            list-style: none;
+        }
+    }
+
+    form {
+
+        /*Espaciado entre zonas de texto en formulario de Contacts*/
+        div {
+            padding-top: 20px;
+            padding-right: 20px;
+        }
+    }
+}

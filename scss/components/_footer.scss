@@ -1,0 +1,26 @@
+footer{
+    /*display: flex;
+    flex-direction: row;
+    text-align: center;*/
+    position: fixed;
+    background-color: $colorfooter;
+    /*height: $tamaniofooter;*/
+    bottom: 0;
+    width: 100vw;
+    padding: $paddingfooter 0 $paddingfooter 0;
+    height: $tamaniofooter+2*$paddingfooter;
+
+    /*Hice el mixin footerin para que centre dentro del footer*/
+
+    
+    
+    /*Hice el mixin footerintexto para que centre dentro del footer*/
+
+        .wpptext{
+            @include footerintexto($tamaniotextofooter, 50vw, -$espaciadotextofooter);
+            font-weight: bold;
+        }
+        .igtext{
+            @include footerintexto($tamaniotextofooter, 50vw, 0.8*$espaciadotextofooter);
+        }
+    }

@@ -1,0 +1,14 @@
+$social: (
+        wpp: -1,
+        ig: 1
+    );
+    
+@each $s, $v in $social{
+    .#{$s}image{
+        @include footerin($tamaniofooter, 50vw, $v);
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+}

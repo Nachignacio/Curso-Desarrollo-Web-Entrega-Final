@@ -1,0 +1,23 @@
+/*Comienza lo que contiene body*/
+
+body {
+    background-image: linear-gradient(#b48a99 20%, #300c0ce0 80%);
+    background-repeat: no-repeat;
+/*Es necesario agregar este estilo para que el gradiente se me extienda por toda la página*/
+    background-attachment: fixed;
+    height: 2500px; /*Esta dimensión del body es para hacer prueba del nav en sticky*/
+
+    h1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 0;
+        p {
+            font-family: Carena-Regular;
+            position: relative;
+            top: 10px;
+            padding: 20px;
+        }
+    }
+}
+

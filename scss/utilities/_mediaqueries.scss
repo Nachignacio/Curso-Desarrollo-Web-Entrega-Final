@@ -1,0 +1,95 @@
+@media screen and (max-width: 767px) {
+    body {
+        main {
+            .divimage {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                #introimage {
+                    height: 50%;
+                    width: 50%;
+                    border-radius: 7%;
+                }
+            }
+        }
+        footer{
+            height: 3*$tamaniofooter;
+            .wppimage{
+                left: 2*$tamaniofooter;
+                top: 20px;
+            }
+            .igimage{
+                left: 0;
+    /*Le doy el espacio de una imagen, mas el padding mas el espacio entre imagenes*/
+                top: $tamaniofooter + 20px + 15px;
+            }
+            .wpptext{
+                left: 3.6*$tamaniotextofooter;
+                width: 50vw;
+            }
+            .igtext{
+                width: 50vw;
+                left: 0;
+                top: $tamaniofooter + 20px + 25px;
+            }
+        }
+    }
+    .navdesktop {
+        display: none;
+    }
+    .navbar {
+        position: sticky;
+        top: 0px;
+        label{
+            width: 100vw;
+            z-index: 999;
+        }
+    }
+    .uploads {
+        .iframeuploads {
+            iframe {
+                width: 72vw;
+            }
+        }
+    }
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .divimage {
+        #introimage {
+            height: 35%;
+            width: 35%;
+        }
+    }
+
+    .navdesktop {
+        display: none;
+    }
+
+    .navbar {
+        position: sticky;
+        top: 0px;
+    }
+
+    .show {
+        position: sticky;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .divimage {
+        #introimage {
+            height: 369px;
+            width: 333px;
+        }
+    }
+
+    .collapse {
+        display: none;
+    }
+
+    .navbar {
+        display: none;
+    }
+}

@@ -1,0 +1,29 @@
+[33mcommit 5df3663c171c860e960a3868603cc06bc12dcd14[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Ignacio Manfredini <nachomanfredini@gmail.com>
+Date:   Tue Oct 31 23:28:22 2023 -0300
+
+    agregado animaciones, funciones SASS, corregido navbar en mobile y tablet
+
+[33mcommit b43529921a0a2d07ab34da6e93dcec803bc82823[m
+Author: Ignacio Manfredini <nachomanfredini@gmail.com>
+Date:   Tue Oct 31 12:17:36 2023 -0300
+
+    Organizado SASS, agregado de metas
+
+[33mcommit a91ac3973bd40dd63577d69459ba25c18f17b622[m
+Author: Ignacio Manfredini <nachomanfredini@gmail.com>
+Date:   Mon Oct 30 16:12:50 2023 -0300
+
+    Terminado footer responsive, agregadas variables y mixins
+
+[33mcommit 6927e13d9c28b9f3a9520d0d797f2647a8db9497[m
+Author: Ignacio Manfredini <nachomanfredini@gmail.com>
+Date:   Thu Oct 26 18:55:27 2023 -0300
+
+    actualización de scss
+
+[33mcommit fde3f64afa060e1a09060b30e7b7cb0fcdf0c6b1[m
+Author: Ignacio Manfredini <nachomanfredini@gmail.com>
+Date:   Sun Oct 22 13:17:59 2023 -0300
+
+    first

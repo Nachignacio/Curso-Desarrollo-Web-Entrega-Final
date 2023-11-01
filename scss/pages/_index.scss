@@ -1,0 +1,19 @@
+.divimage {
+    display: flex;
+    flex-direction: row;
+    margin: 2%;
+
+    /*Posicionamiento de la imagen en Introduction, la intencion que tengo 
+es de ponerlo al costado y a su derecha el texto introductorio al sitio web*/
+    #introimage {
+        border-radius: 40px;
+        top: 200px;
+    }
+
+    #intro {
+        margin: 25px;
+        top: 200px;
+        text-align: justify;
+        font-weight: 500;
+    }
+}
