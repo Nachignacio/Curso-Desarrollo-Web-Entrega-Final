@@ -1,4 +1,4 @@
-.navdesktop {
+#navbarBurger {
     /*Para que el nav quede pegado al tope de la página cuando se 
 scrollea hacia abajo*/
     position: sticky;
@@ -8,20 +8,22 @@ scrollea hacia abajo*/
     z-index: 999;
     /*Poner 100vw fue la única forma que encontré para que el body deje 
     de quedar más chico que la página en distintas páginas*/
-    width: 100vw;
-
     ul {
+        width: 100vw;
+        border: solid;
+        border-color: $colorBordeNav;
+        z-index: 999;
         li {
             a {
 
                 /*Formato de botones para que sea clickeable todo el boton del navegador y no solo 
 el texto del ancla, tambien se agrega animacion de hover*/
                 .navbutton {
-                    background-color: #300c0c;
+                    background-color: inherit; /*Para que el texto tenga el mismo color de fondo cuando sea el actual*/
                     border: none;
                     /*El borde ya esta dado por el parent list item*/
                     font-family: Carena-Regular;
-                    color: white;
+                    color: $colorTextoNav;
                     text-align: center;
                     font-size: 16px;
                     opacity: 0.6;
@@ -52,18 +54,18 @@ funciona dentro de "nav", tengo que si o si modificar la clase "navbar"*/
 .navbar {
     padding: 0;
     border: solid;
-
+    border-color: $colorBordeNav;
     div {
         .navbar-toggler {
             /*Le doy borde al boton*/
             border: solid;
-            border-color: black;
+            border-color: $colorBordeNav;
         }
     }
 
     /*Color del navbar*/
     #navbar {
-        background-color: #300c0c;
+        background-color: $colorNav;
     }
 }
 
@@ -79,12 +81,12 @@ nav {
         list-style: none;
         padding: 0%;
         border: 0;
-
+        margin-bottom: 0;
         li {
             /*Formato de los botones para el nav*/
             border-style: none;
             font-family: Carena-Regular;
-            background-color: #300c0c;
+            background-color: $colorNav;
             /*La idea del 20% es para que con el total de los 5 elementos del navegador se me 
 ocupe la totalidad del ancho de la pagina*/
             width: 100%;
@@ -102,25 +104,27 @@ ocupe la totalidad del ancho de la pagina*/
 }
 
 .collapse {
+    position: sticky; /*Para que se quede debajo del bar luego de desplegarse*/
+    top: 70px;
+    width: 100vw;
+    z-index: -1; /*Para que no me tape el boton al desplegar*/
     .p-4 {
         /*Solo poniendo !important me hace efecto este cambio*/
         padding: 5px !important;
     }
-
     div {
         a {
             .navbutton {
-                background-color: #300c0c;
+                background-color: $colorNav;
                 border: none;
                 font-family: Carena-Regular;
-                color: white;
+                color: $colorTextoNav;
                 text-align: center;
                 font-size: 16px;
                 opacity: 0.6;
                 display: inline-block;
                 width: 95%;
                 cursor: pointer;
-
                 &:hover {
                     opacity: 1;
                 }
@@ -131,6 +135,10 @@ ocupe la totalidad del ancho de la pagina*/
 
 /*Esta clase es el formato que va a tener MIENTRAS se abre el menu hamburguesa*/
 .collapsing {
+    position: sticky; /*Para que se quede debajo del bar luego de desplegarse*/
+    top: 70px;
+    width: 100vw;;
+    z-index: -1; /*Para que no me tape el boton al desplegar*/
     .p-4 {
         /*Solo poniendo !important me hace efecto este cambio*/
         padding: 5px !important;
@@ -139,10 +147,10 @@ ocupe la totalidad del ancho de la pagina*/
     div {
         a {
             .navbutton {
-                background-color: #300c0c;
+                background-color: $colorNav;
                 border: none;
                 font-family: Carena-Regular;
-                color: white;
+                color: $colorTextoNav;
                 text-align: center;
                 font-size: 16px;
                 opacity: 0.6;

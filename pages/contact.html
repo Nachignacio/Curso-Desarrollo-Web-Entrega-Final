@@ -18,8 +18,45 @@
             <p>Piano Bounty</p>
         </h1>
     </header>
-    <nav class="navdesktop"> <!--Empiezo a configurar el navegador de la pagina-->
-        <ul>
+    <nav class="navbar navbar-dark bg-danger-subtle" id="navbarBurger"> <!--Empiezo a configurar el navegador de la pagina-->
+        <div class="container-fluid" id="navbar">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" 
+            aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+            <div class="bg-danger-subtle p-4">
+                <a href="./requests.html">
+                    <button class="navbutton">
+                        REQUESTS
+                    </button>
+                </a>
+                <a href="./uploads.html">
+                    <button class="navbutton">
+                        UPLOADS
+                    </button>
+                </a>
+                <a href="../index.html">
+                    <button class="navbutton">
+                        INTRODUCTION
+                    </button>
+                </a>
+                <a href="./speedruns.html">
+                    <button class="navbutton">
+                        SPEEDRUNS
+                    </button>
+                </a>
+                <a href="./contact.html">
+                    <button class="navbutton" id="actual">
+                <!--Le agrego el id "actual" para usarlo en css y sombrearlo en negro para indicar en que pagina se encuentra el usuario-->
+                        CONTACT
+                    </button>
+                </a>
+            </div>
+        </div>
+        <ul class="navDesktop">
             <li>
                 <a href="../pages/requests.html" class="hvr-underline-from-center">
                     <button class="navbutton">
@@ -48,86 +85,106 @@
                     </button></a>
             </li>
             <li>
-                <a href="../pages/contact.html" class="hvr-underline-from-center">
-                    <button class="navbutton" id="actual"> <!--Le agrego el id "actual" para usarlo en css y sombrearlo en negro para indicar en que pagina se encuentra el usuario-->
+                <a href="../pages/contact.html" class="hvr-underline-from-center" id="actual">
+                    <button class="navbutton"> <!--Le agrego el id "actual" para usarlo en css y sombrearlo en negro para indicar en que pagina se encuentra el usuario-->
                         CONTACT
                     </button>
                 </a>
             </li>
         </ul>
     </nav>
-    <nav class="navbar navbar-dark bg-danger-subtle">
-        <div class="container-fluid" id="navbar">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        </div>
-    </nav>
-    <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
-        <div class="bg-danger-subtle p-4">
-        <a href="./requests.html">
-            <button class="navbutton">
-                REQUESTS
-            </button>
-        </a>
-        <a href="./uploads.html">
-            <button class="navbutton">
-                UPLOADS
-            </button>
-        </a>
-        <a href="../index.html">
-            <button class="navbutton">
-                INTRODUCTION
-            </button>
-        </a>
-        <a href="./speedruns.html">
-            <button class="navbutton">
-                SPEEDRUNS
-            </button>
-        </a>
-        <a href="./contact.html">
-            <button class="navbutton" id="actual">
-            <!--Le agrego el id "actual" para usarlo en css y sombrearlo en negro para indicar en que pagina se encuentra el usuario-->
-                CONTACT
-            </button>
-        </a>
-        </div>
-    </div>
     <main class="socialmedia"> <!--La idea es tener una seccion en la que me puedan contactar o pasar comentarios y feedback-->
         <div> <!--Dejo mis redes sociales como una lista-->
             <p>
                 Here are my social media links in case you would like to support me!:
             </p>
             <ul id="socialmedialist">
-                <li>
-                    <a>Instagram</a> 
+                <li id="listIg">
+                    <a href="https://www.instagram.com/nachomanfredini">
+                        <img src="../images/instagramIcon.png" alt="Icono de WhatsApp">
+                        Instagram</a> 
                 </li>
                 <li>
-                    <a>YouTube</a>
+                    <a href="https://www.youtube.com/channel/UCc0LZoM_uTapCsT-FZoqgFQ">
+                        <img src="../images/youtubeIcon.png" alt="Icono de Instagram">
+                        YouTube</a>
                 </li>
             </ul>
         </div>
-        <div> <!--Texto para introducir lo que sera el formulario para mandarme feedback-->
+        <section>
+            <form>
+                <div> <!--Texto para introducir lo que sera el formulario para mandarme feedback-->
+                    <p>
+                        Feel free to send me your opinion about my uploads, performance, compositions, thoughts about this website, new projects, etc. 
+                        Any feedback is welcomed:
+                    </p>
+                </div>
+                <div> <!-- Agrego celdas de texto opcionales para incluir en el mensaje-->
+                    <label>Name:</label>
+                    <input type="text" name="name" placeholder="Name">
+                </div>
+                <div>
+                    <label for="email">E-mail:</label><!-- Celda para agregar el mail de remitente, tambien opcional-->
+                    <input type="email" id="email" placeholder="example@email.com">
+                </div>
+                <div>
+                    <textarea cols="30" rows="10" placeholder="Write a message..."></textarea> <!--Zona de texto para escribir el mensaje-->
+                </div>
+                <input type="submit"> <!-- Dejo botones para enviar el mensaje o resetearlo-->
+                <input type="reset">
+            </form>
+        </section>
+        <section class="recommended">
             <p>
-                Feel free to send me your opinion about my uploads, performance, compositions, thoughts about this website, new projects, etc. 
-                Any feedback is welcomed:
+                Here are some very talented channels and artists I follow as inspiration. You may be interested in hearing them out too:
             </p>
-        </div>
-        <form>
-            <div> <!-- Agrego celdas de texto opcionales para incluir en el mensaje-->
-                <label>Name:</label>
-                <input type="text" name="name" placeholder="Name">
+            <h2>
+                Animenz
+            </h2>
+            <div id="firstVideo">
+                <iframe src="https://www.youtube.com/embed?listType=playlist&list=UUyW-leqPXUunrXXxFjpZ7VA">
+                </iframe>
+            </div>
+            <h3>
+                Newest videos:
+            </h3>
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <iframe src="https://www.youtube.com/embed?listType=playlist&list=UUyW-leqPXUunrXXxFjpZ7VA&index=2"></iframe>
+                    </div>
+                    <div class="carousel-item">
+                        <iframe src="https://www.youtube.com/embed?listType=playlist&list=UUyW-leqPXUunrXXxFjpZ7VA&index=3"></iframe>
+                    </div>
+                    <div class="carousel-item">
+                        <iframe src="https://www.youtube.com/embed?listType=playlist&list=UUyW-leqPXUunrXXxFjpZ7VA&index=5"></iframe>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!--<div>
+                <h2>
+                    Thrasher
+                </h2>
             </div>
             <div>
-                <label for="email">E-mail:</label><!-- Celda para agregar el mail de remitente, tambien opcional-->
-                <input type="email" id="email" placeholder="example@email.com">
+                <h2>
+                    Piano Player
+                </h2>
             </div>
             <div>
-                <textarea cols="30" rows="10" placeholder="Write a message..."></textarea> <!--Zona de texto para escribir el mensaje-->
-            </div>
-            <input type="submit"> <!-- Dejo botones para enviar el mensaje o resetearlo-->
-            <input type="reset">
-        </form>
+                <h2>
+                    Music Man
+                </h2>
+            </div>-->
+        </section>
     </main>
     <footer>
         <p class="wpptext">
@@ -139,7 +196,7 @@
             <img src="../images/whatsappicon.svg" alt="Icono de WhatsApp">
         </div>
         <div class="igimage">
-            <img src="../images/instagramicon.svg" alt="Icono de Instagram">
+            <img src="../images/instagramicon.png" alt="Icono de Instagram">
         </div>
         <p class="igtext">
             <a href="https://www.instagram.com/nachomanfredini">

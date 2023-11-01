@@ -16,7 +16,7 @@
 /*Esto es para que el color del boton que indique la pagina actual, haciendo override al color asignado a los textos del nav 
 en siguiente bloque de codigo*/
 #actual{
-    background-color: #5c3434;
+    background-color: $colorActual;
     border-radius: 5px;
     padding-left: 50px;
     padding-right: 50px;

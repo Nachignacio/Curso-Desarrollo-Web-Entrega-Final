@@ -15,13 +15,44 @@
     <link rel="icon" type="image/x-icon" href="./images/pianofavicon.png">
 </head>
 <body>
-    <h1>
-<!-- Creo el logo de la pagina -->
-        <p>Piano Bounty</p>
-    </h1>
-    <nav class="navdesktop">
+    <header>
+        <h1>
+        <!-- Creo el logo de la pagina -->
+            <p>Piano Bounty</p>
+        </h1>
+    </header>
+    <nav class="navbar navbar-dark bg-danger-subtle" id="navbarBurger">
 <!--Empiezo a configurar el navegador de la pagina-->
-        <ul>
+        <div class="container-fluid" id="navbar">
+            <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+            <div class="bg-danger-subtle p-4">
+                <a href="./pages/requests.html">
+                    <button class="navbutton">REQUESTS</button>
+                </a>
+                <a href="./pages/uploads.html">
+                    <button class="navbutton">UPLOADS</button>
+                </a>
+                <a href="./index.html">
+                    <button class="navbutton" id="actual"  class="hvr-underline-from-center">
+        <!--Le agrego el id "actual" para usarlo en css y sombrearlo en negro para indicar en que pagina se encuentra el usuario-->
+                    INTRODUCTION
+                    </button>
+                </a>
+                <a href="./pages/speedruns.html">
+                    <button class="navbutton">SPEEDRUNS</button>
+                </a>
+                <a href="./pages/contact.html">
+                    <button class="navbutton">CONTACT</button>
+                </a>
+            </div>
+        </div>
+        <ul class="navDesktop">
             <li>
                 <a href="./pages/requests.html" class="hvr-underline-from-center">
                     <button class="navbutton">REQUESTS</button>
@@ -33,8 +64,8 @@
                 </a>
             </li>
             <li>
-                <a href="./index.html" class="hvr-underline-from-center">
-                    <button class="navbutton" id="actual">
+                <a href="./index.html" class="hvr-underline-from-center" id="actual">
+                    <button class="navbutton">
     <!--Le agrego el id "actual" para usarlo en css y sombrearlo en negro para indicar en que pagina se encuentra el usuario-->
                         INTRODUCTION
                     </button>
@@ -52,65 +83,46 @@
             </li>
         </ul>
     </nav>
-    <nav class="navbar navbar-dark bg-danger-subtle">
-        <div class="container-fluid" id="navbar">
-            <button class="navbar-toggler" type="button"
-            data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-            aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-    </nav>
-    <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
-        <div class="bg-danger-subtle p-4">
-            <a href="./pages/requests.html">
-                <button class="navbutton">REQUESTS</button>
-            </a>
-            <a href="./pages/uploads.html">
-                <button class="navbutton">UPLOADS</button>
-            </a>
-            <a href="./index.html">
-                <button class="navbutton" id="actual"  class="hvr-underline-from-center">
-    <!--Le agrego el id "actual" para usarlo en css y sombrearlo en negro para indicar en que pagina se encuentra el usuario-->
-                INTRODUCTION
-                </button>
-            </a>
-            <a href="./pages/speedruns.html">
-                <button class="navbutton">SPEEDRUNS</button>
-            </a>
-            <a href="./pages/contact.html">
-                <button class="navbutton">CONTACT</button>
-            </a>
-        </div>
-    </div>   
     <main>
     <!--Comienza la introduccion al sitio web, explico un poco su razon de ser y me introduzco-->
-        <div class="divimage">
-            <img src="./images/piano playing.png" alt="piano playing" id="introimage"/>
+        <section>
+            <div class="divimage">
+                <img src="./images/pianoPlaying.png" alt="piano playing" id="introimage"/>
         <!--Imagen para decorar, cuando me saque una foto buena pongo una original-->
-            <p id="intro">
-                Welcome to my hobby dumpster. This is a virtual space I made to myself
-                to keep progress of what I can improve with my piano skills and
-                motivate myself to keep practicing and compose appealing rearranges of
-                songs people would love to hear with a more classical and melodic
-                touch. That said, I would eventually like to use this page as
-                portfolio in the future.<br/>You probably don't know who I am so:<br/>My
-                name is Ignacio Manfredini, I'm an Argentinian musician amateur
-                wanna-be and I play piano since I have use of memory. I'm 28 years old
-                and I may not play as good as someone that has been practicing long
-                hours everyday of his life, but I like to polish my listening skills
-                trying to play every song I can by ear. In the long run, I would like
-                to end up as skillfull as many pianists I admire that have a
-                well-deserved reputation over social media.<br/>That's why since some
-                years ago I started opening up request spaces in my social media to
-                let people know that I'm willing to rearrange songs they'd like to
-                hear on piano. Over the time, this grew up and the content in my
-                social media accumulated more than I had anticipated.<br/>So this is
-                it, the conclusion of why I made this page: to keep a tidy space to
-                organice my uploads and make a more official channel to keep track of
-                requests of songs that people would like me to play or rearrange.<br />Thank
-                you for reading!
-        </div>
+                <div id="intro">
+                    <p class="welcomeCard">
+                        <span class="welcome">¡Welcome!</span><br/>
+                        <span class="toMy"> to my hobby dumpster</span> 
+                    </p>
+                    <div class="divAboutMe">
+                        <span class="aboutMe">About Me</span>
+                        <p>
+                        You probably don't know who I am so:<br/>My
+                        name is Ignacio Manfredini. I'm an Argentinian musician amateur
+                        wanna-be and I play piano since I have use of memory.
+                        This is a virtual space I made to myself
+                        to keep progress of what I can improve with my piano skills and
+                        motivate myself to keep practicing and compose appealing rearranges of
+                        songs people would love to hear with a more classical and melodic
+                        touch. That said, I'd eventually like to use this page as
+                        portfolio in the future. I'm 28 years old
+                        and I may not play as good as someone that has been practicing long
+                        hours everyday of his life, but I like to polish my listening skills
+                        trying to play every song I can by ear. In the long run, I would like
+                        to end up as skillfull as many pianists I admire that have a
+                        well-deserved reputation over social media.That's why since some
+                        years ago I started opening up request spaces in my social media to
+                        let people know that I'm willing to rearrange songs they'd like to
+                        hear on piano. Over time, this grew up and my content accumulated more than I had anticipated.<br/>So this is
+                        it, the conclusion of why I made this page: to keep a tidy space to
+                        organice my uploads and make a more official channel to keep track of
+                        requests of songs that people would like me to play or rearrange.<br />Thank
+                        you for reading!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <p class="wpptext">
@@ -122,7 +134,7 @@
             <img src="./images/whatsappicon.svg" alt="Icono de WhatsApp">
         </div>
         <div class="igimage">
-            <img src="./images/instagramicon.svg" alt="Icono de Instagram">
+            <img src="./images/instagramIcon.png" alt="Icono de Instagram">
         </div>
         <p class="igtext">
             <a href="https://www.instagram.com/nachomanfredini">

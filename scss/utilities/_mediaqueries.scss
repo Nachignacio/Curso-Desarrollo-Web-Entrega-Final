@@ -13,31 +13,31 @@
             }
         }
         footer{
-            height: 3*$tamaniofooter;
+            height: 3*$tamanioFooter;
             .wppimage{
-                left: 2*$tamaniofooter;
+                left: 2*$tamanioFooter;
                 top: 20px;
             }
             .igimage{
                 left: 0;
     /*Le doy el espacio de una imagen, mas el padding mas el espacio entre imagenes*/
-                top: $tamaniofooter + 20px + 15px;
+                top: $tamanioFooter + 20px + 15px;
             }
             .wpptext{
-                left: 3.6*$tamaniotextofooter;
+                left: 3.6*$tamanioTextoFooter;
                 width: 50vw;
             }
             .igtext{
                 width: 50vw;
                 left: 0;
-                top: $tamaniofooter + 20px + 25px;
+                top: $tamanioFooter + 20px + 25px;
             }
         }
     }
-    .navdesktop {
+    .navDesktop {
         display: none;
     }
-    .navbar {
+    #navbarBurger {
         position: sticky;
         top: 0px;
         label{
@@ -52,7 +52,6 @@
             }
         }
     }
-    
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -63,7 +62,7 @@
         }
     }
 
-    .navdesktop {
+    .navDesktop {
         display: none;
     }
 
@@ -89,7 +88,7 @@
         display: none;
     }
 
-    .navbar {
+    #navbar {
         display: none;
     }
 }

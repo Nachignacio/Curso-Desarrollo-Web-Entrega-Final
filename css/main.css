@@ -1,5 +1,9 @@
 @charset "UTF-8";
 /*se importan los partials*/
+/*footer*/
+/*globales*/
+/*nav*/
+/*Index*/
 /*Reseteo los valores seteados del navegador. Si no pongo esto, se me crea un margen por default que crea un marco blanco en la pagina*/
 * {
   margin: 0;
@@ -20,15 +24,25 @@ en siguiente bloque de codigo*/
   padding-right: 50px;
 }
 
-/*Variables del footer*/
+@keyframes tiltingCard {
+  0% {
+    transform: translateX(0%) scale(1.01);
+  }
+  25% {
+    transform: translateX(5px) scale(1.01);
+  }
+  75% {
+    transform: translateX(-5px) scale(1.01);
+  }
+}
 .wppimage {
   /*hf: altura foto, left: ubicacion desde la izquierda, space: espaciado desde el centro*/
   display: inline-block;
   position: absolute;
-  height: 50px;
-  width: 50px;
+  height: 45px;
+  width: 45px;
   left: 50vw;
-  transform: translateX(-75px);
+  transform: translateX(-67.5px);
 }
 .wppimage img {
   height: 100%;
@@ -39,17 +53,17 @@ en siguiente bloque de codigo*/
   /*hf: altura foto, left: ubicacion desde la izquierda, space: espaciado desde el centro*/
   display: inline-block;
   position: absolute;
-  height: 50px;
-  width: 50px;
+  height: 45px;
+  width: 45px;
   left: 50vw;
-  transform: translateX(25px);
+  transform: translateX(22.5px);
 }
 .igimage img {
   height: 100%;
   width: 100%;
 }
 
-.navdesktop {
+#navbarBurger {
   /*Para que el nav quede pegado al tope de la página cuando se 
   scrollea hacia abajo*/
   position: sticky;
@@ -59,14 +73,19 @@ en siguiente bloque de codigo*/
   z-index: 999;
   /*Poner 100vw fue la única forma que encontré para que el body deje 
   de quedar más chico que la página en distintas páginas*/
-  width: 100vw;
 }
-.navdesktop ul li a {
+#navbarBurger ul {
+  width: 100vw;
+  border: solid;
+  border-color: black;
+  z-index: 999;
+}
+#navbarBurger ul li a {
   /*Formato de botones para que sea clickeable todo el boton del navegador y no solo 
   el texto del ancla, tambien se agrega animacion de hover*/
 }
-.navdesktop ul li a .navbutton {
-  background-color: #300c0c;
+#navbarBurger ul li a .navbutton {
+  background-color: inherit; /*Para que el texto tenga el mismo color de fondo cuando sea el actual*/
   border: none;
   /*El borde ya esta dado por el parent list item*/
   font-family: Carena-Regular;
@@ -85,7 +104,7 @@ en siguiente bloque de codigo*/
   cursor: pointer;
   /*Con esta linea, el mousse cambia a una manito cuando pasa por encima del boton para indicar que se puede hacer click ahi*/
 }
-.navdesktop ul li a .navbutton:hover {
+#navbarBurger ul li a .navbutton:hover {
   /*Con esta parte agrega la opacidad que quiero cuando pase el mouse por el boton*/
   opacity: 1;
 }
@@ -96,6 +115,7 @@ funciona dentro de "nav", tengo que si o si modificar la clase "navbar"*/
 .navbar {
   padding: 0;
   border: solid;
+  border-color: black;
   /*Color del navbar*/
 }
 .navbar div .navbar-toggler {
@@ -119,6 +139,7 @@ nav ul {
   list-style: none;
   padding: 0%;
   border: 0;
+  margin-bottom: 0;
 }
 nav ul li {
   /*Formato de los botones para el nav*/
@@ -136,6 +157,12 @@ nav ul li a button {
   margin: 7px;
 }
 
+.collapse {
+  position: sticky; /*Para que se quede debajo del bar luego de desplegarse*/
+  top: 70px;
+  width: 100vw;
+  z-index: -1; /*Para que no me tape el boton al desplegar*/
+}
 .collapse .p-4 {
   /*Solo poniendo !important me hace efecto este cambio*/
   padding: 5px !important;
@@ -157,6 +184,12 @@ nav ul li a button {
 }
 
 /*Esta clase es el formato que va a tener MIENTRAS se abre el menu hamburguesa*/
+.collapsing {
+  position: sticky; /*Para que se quede debajo del bar luego de desplegarse*/
+  top: 70px;
+  width: 100vw;
+  z-index: -1; /*Para que no me tape el boton al desplegar*/
+}
 .collapsing .p-4 {
   /*Solo poniendo !important me hace efecto este cambio*/
   padding: 5px !important;
@@ -220,7 +253,6 @@ body {
   background-repeat: no-repeat;
   /*Es necesario agregar este estilo para que el gradiente se me extienda por toda la página*/
   background-attachment: fixed;
-  height: 2500px; /*Esta dimensión del body es para hacer prueba del nav en sticky*/
 }
 body h1 {
   display: flex;
@@ -239,25 +271,108 @@ body h1 p {
   display: flex;
   flex-direction: row;
   margin: 2%;
+  margin-top: 20px;
   /*Posicionamiento de la imagen en Introduction, la intencion que tengo 
   es de ponerlo al costado y a su derecha el texto introductorio al sitio web*/
 }
 .divimage #introimage {
   border-radius: 40px;
   top: 200px;
+  box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.75);
+}
+.divimage #introimage:hover {
+  animation-duration: 0.25s;
+  animation-name: tiltingCard;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
 }
 .divimage #intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 25px;
   top: 200px;
   text-align: justify;
   font-weight: 500;
 }
+.divimage #intro .welcomeCard {
+  color: white;
+  display: inline-block;
+  text-align: right;
+  border: solid;
+  border-width: thin;
+  border-color: black;
+  padding: 25px;
+  background-color: rgba(100, 20, 17, 0.555);
+  height: 150px;
+  width: 300px;
+  box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.75);
+}
+.divimage #intro .welcomeCard:hover {
+  animation-duration: 0.25s;
+  animation-name: tiltingCard;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+.divimage #intro .welcomeCard .welcome {
+  color: white;
+  font-size: 50px; /*Tamanio de texto*/
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.divimage #intro .welcomeCard .toMy {
+  color: white;
+  font-size: 15px; /*Tamanio de texto*/
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.divimage .divAboutMe {
+  margin-bottom: 80px;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  border: solid;
+  border-width: thin;
+  border-color: black;
+  padding: 25px;
+  background-color: rgba(100, 20, 17, 0.555);
+  height: auto;
+  width: auto;
+  box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.75);
+}
+.divimage .divAboutMe:hover {
+  animation-duration: 0.25s;
+  animation-name: tiltingCard;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+.divimage .divAboutMe .aboutMe {
+  color: white;
+  font-size: 50px; /*Tamanio de texto*/
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  justify-self: center;
+}
+.divimage .divAboutMe p {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 300;
+}
 
 /*Para darle un espacio entre el primer texto de Contacts con el navegador, y margen al texto*/
 .socialmedia {
+  display: grid;
+  grid-template-areas: "socialMedia recommended" "form recommended";
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
   margin-left: 20px;
+  margin-top: 20px;
 }
 .socialmedia div {
+  grid-area: socialMedia;
   /*Para ordenar los items "Instagram, YouTube, etc..."*/
 }
 .socialmedia div #socialmedialist {
@@ -266,32 +381,109 @@ body h1 p {
   justify-content: space-evenly;
   list-style: none;
 }
+.socialmedia div #socialmedialist li {
+  border: solid;
+  border-width: thin;
+  border-color: black;
+  padding: 5px 15px 10px 15px;
+  background-color: rgba(100, 20, 17, 0.555);
+  cursor: pointer;
+  box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.75);
+}
+.socialmedia div #socialmedialist li:hover {
+  animation-duration: 0.25s;
+  animation-name: tiltingCard;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+.socialmedia div #socialmedialist li a {
+  text-decoration: none;
+  color: white;
+}
+.socialmedia div #socialmedialist li a img {
+  height: 40px;
+  margin-right: 10px;
+}
 .socialmedia form {
+  grid-area: form;
   /*Espaciado entre zonas de texto en formulario de Contacts*/
 }
 .socialmedia form div {
   padding-top: 20px;
   padding-right: 20px;
 }
+.socialmedia .recommended {
+  margin-right: 50px;
+  border-left: solid;
+  padding-left: 15px;
+  grid-area: recommended;
+  height: 100%;
+}
+.socialmedia .recommended p {
+  margin-bottom: 50px;
+}
+.socialmedia .recommended h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+.socialmedia .recommended #firstVideo {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  margin-bottom: 100px;
+}
+.socialmedia .recommended #firstVideo iframe {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.socialmedia .recommended h3 {
+  position: relative;
+  top: 0px;
+  text-decoration: underline;
+  margin-bottom: 35px;
+  display: flex;
+}
+.socialmedia .recommended .carousel .carousel-inner .carousel-item {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  margin-bottom: 100px;
+}
+.socialmedia .recommended .carousel .carousel-inner .carousel-item iframe {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
 
 /*Espaciado entre navegador y primer texto en Requests*/
 .requests {
   margin-left: 20px;
+  margin-top: 20px;
   /*Espaciado entre texto y lista de solicitudes en Requests*/
 }
-.requests p {
+.requests section p {
   margin-bottom: 25px;
 }
-.requests .iframediv {
+.requests section .iframediv {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   align-items: center;
 }
-.requests .iframediv iframe {
+.requests section .iframediv iframe {
   width: 90%;
   margin-left: -20px;
+}
+.requests section p {
+  margin-top: 20px;
 }
 
 .speedruns {
@@ -300,6 +492,7 @@ body h1 p {
   /*Espaciado entre parrafo y videos de Speedruns*/
 }
 .speedruns p {
+  margin-top: 20px;
   padding-bottom: 10px;
 }
 .speedruns #noupload {
@@ -311,6 +504,12 @@ body h1 p {
 .uploads {
   margin-left: 20px;
   /*Espaciado entre video subido en Uploads y todo lo demas*/
+}
+.uploads p {
+  margin-top: 20px;
+  border-bottom: solid;
+  border-width: thin;
+  border-color: black;
 }
 .uploads .iframeuploads {
   display: flex;
@@ -333,6 +532,7 @@ body h1 p {
   -moz-box-shadow: 30px 30px 50px 1px rgba(0, 0, 0, 0.64);
   /*Fin de codigo importado*/
   cursor: pointer;
+  z-index: 0;
 }
 .uploads .iframeuploads label img:hover {
   transform: skew(5deg, 1deg) scale(1.008);
@@ -362,7 +562,7 @@ body h1 p {
   visibility: visible;
   position: absolute;
   /*Ubicación para que se ponga justo donde antes estaba la imagen*/
-  top: 265.8px;
+  top: 273px;
 }
 .uploads .iframeuploads #ultimocapitulo:checked ~ .labelultimocapitulo {
   opacity: 0;
@@ -380,16 +580,16 @@ body h1 p {
     border-radius: 7%;
   }
   body footer {
-    height: 150px;
+    height: 135px;
   }
   body footer .wppimage {
-    left: 100px;
+    left: 90px;
     top: 20px;
   }
   body footer .igimage {
     left: 0;
     /*Le doy el espacio de una imagen, mas el padding mas el espacio entre imagenes*/
-    top: 85px;
+    top: 80px;
   }
   body footer .wpptext {
     left: 360px;
@@ -398,16 +598,16 @@ body h1 p {
   body footer .igtext {
     width: 50vw;
     left: 0;
-    top: 95px;
+    top: 90px;
   }
-  .navdesktop {
+  .navDesktop {
     display: none;
   }
-  .navbar {
+  #navbarBurger {
     position: sticky;
     top: 0px;
   }
-  .navbar label {
+  #navbarBurger label {
     width: 100vw;
     z-index: 999;
   }
@@ -420,7 +620,7 @@ body h1 p {
     height: 35%;
     width: 35%;
   }
-  .navdesktop {
+  .navDesktop {
     display: none;
   }
   .navbar {
@@ -439,7 +639,7 @@ body h1 p {
   .collapse {
     display: none;
   }
-  .navbar {
+  #navbar {
     display: none;
   }
 }
@@ -453,7 +653,7 @@ footer {
   bottom: 0;
   width: 100vw;
   padding: 20px 0 20px 0;
-  height: 90px;
+  height: 85px;
   /*Hice el mixin footerin para que centre dentro del footer*/
   /*Hice el mixin footerintexto para que centre dentro del footer*/
 }
@@ -475,6 +675,13 @@ footer .igtext {
   top: 35px;
   left: 50vw;
   transform: translateX(110px);
+}
+footer .igtext a {
+  position: absolute;
+  top: -5px;
+  color: rgb(151, 79, 69);
+  font-weight: 500;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=main.css.map */

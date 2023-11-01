@@ -1,0 +1,105 @@
+/*Para darle un espacio entre el primer texto de Contacts con el navegador, y margen al texto*/
+.socialmedia {
+    display: grid;
+    grid-template-areas:
+    "socialMedia recommended"
+    "form recommended";
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    margin-left: 20px;
+    margin-top: 20px;
+    div {
+        grid-area: socialMedia;
+        /*Para ordenar los items "Instagram, YouTube, etc..."*/
+        #socialmedialist {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            list-style: none;
+            li{
+                border: solid;
+                border-width: thin;
+                border-color: black;
+                padding: 5px 15px 10px 15px;
+                background-color: $colorCard;
+                cursor: pointer;
+                &:hover{
+                    animation-duration: 0.25s;
+                    animation-name: tiltingCard;
+                    animation-timing-function: linear;
+                    animation-iteration-count: 1;
+                }
+                box-shadow: 10px 10px 24px 0px rgba(0,0,0,0.75);
+                -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);
+                -moz-box-shadow: 10px 10px 24px 0px rgba(0,0,0,0.75);
+                a{
+                    img{
+                        height: 40px;
+                        margin-right: 10px;
+                    }
+                    text-decoration: none;
+                    color: $colorDentroDeCarta;
+                }
+            }
+        }
+    }
+    form {
+        grid-area: form;
+        /*Espaciado entre zonas de texto en formulario de Contacts*/
+        div {
+            padding-top: 20px;
+            padding-right: 20px;
+        }
+    }
+    .recommended{
+        margin-right: 50px;
+        border-left: solid;
+        padding-left: 15px;
+        grid-area: recommended;
+        height: 100%;
+        p{
+            margin-bottom: 50px;
+        }
+        h2{
+            text-align: center;
+            text-decoration: underline;
+        }
+        #firstVideo{
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            margin-bottom: 100px;
+            iframe{
+                position: absolute;
+                top: 50px;
+                left: 0;
+                height: 100%;
+                width: 100%;
+            }
+        }
+        h3{
+            position: relative;
+            top: 0px;
+            text-decoration: underline;
+            margin-bottom: 35px;
+            display: flex;
+        }
+        .carousel{
+            .carousel-inner{
+                .carousel-item{
+                    position: relative;
+                    padding-bottom: 56.25%;
+                    height: 0;
+                    margin-bottom: 100px;
+                    iframe{
+                        position: absolute;
+                        top: 0px;
+                        left: 0;
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

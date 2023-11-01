@@ -5,7 +5,7 @@ $social: (
     
 @each $s, $v in $social{
     .#{$s}image{
-        @include footerin($tamaniofooter, 50vw, $v);
+        @include footerin($tamanioFooter, 50vw, $v);
         img{
             height: 100%;
             width: 100%;

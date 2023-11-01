@@ -3,12 +3,12 @@ footer{
     flex-direction: row;
     text-align: center;*/
     position: fixed;
-    background-color: $colorfooter;
+    background-color: $colorFooter;
     /*height: $tamaniofooter;*/
     bottom: 0;
     width: 100vw;
-    padding: $paddingfooter 0 $paddingfooter 0;
-    height: $tamaniofooter+2*$paddingfooter;
+    padding: $paddingFooter 0 $paddingFooter 0;
+    height: $tamanioFooter+2*$paddingFooter;
 
     /*Hice el mixin footerin para que centre dentro del footer*/
 
@@ -17,10 +17,19 @@ footer{
     /*Hice el mixin footerintexto para que centre dentro del footer*/
 
         .wpptext{
-            @include footerintexto($tamaniotextofooter, 50vw, -$espaciadotextofooter);
+            @include footerintexto($tamanioTextoFooter, 50vw, -$espaciadoTextoFooter);
             font-weight: bold;
+
         }
         .igtext{
-            @include footerintexto($tamaniotextofooter, 50vw, 0.8*$espaciadotextofooter);
+            
+            @include footerintexto($tamanioTextoFooter, 50vw, 0.8*$espaciadoTextoFooter);
+            a{
+                position: absolute;
+                top: -5px;
+                color: $colorTextoFooter;
+                font-weight: 500;
+                text-decoration: none;
+            }
         }
     }

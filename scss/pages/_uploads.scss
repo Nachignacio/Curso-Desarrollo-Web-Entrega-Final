@@ -1,7 +1,12 @@
 /*Espaciado entre navegador y primer texto de Uploads*/
 .uploads {
     margin-left: 20px;
-
+    p{
+        margin-top: 20px;
+        border-bottom: solid;
+        border-width: thin;
+        border-color: $colorBordeNav;
+    }
     /*Espaciado entre video subido en Uploads y todo lo demas*/
     .iframeuploads {
         display: flex;
@@ -24,6 +29,7 @@
                 -moz-box-shadow: 30px 30px 50px 1px rgba(0,0,0,0.64);
                 /*Fin de codigo importado*/
                 cursor: pointer;
+                z-index: 0;
                 &:hover{
                     transform: skew(5deg,1deg) scale(1.008);                    
         /*Codigo importado usando una pagina de box generator*/
@@ -54,15 +60,11 @@
                 visibility: visible;
                 position: absolute;
     /*Ubicación para que se ponga justo donde antes estaba la imagen*/
-                top: 265.8px;
+                top: 273px;
             }
             &:checked~.labelultimocapitulo{
                 opacity: 0;
             }
         }
     }
-}
-
-#phultimocapitulo{
-    
 }

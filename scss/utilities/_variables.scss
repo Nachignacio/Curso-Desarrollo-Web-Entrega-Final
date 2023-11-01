@@ -1,6 +1,30 @@
-/*Variables del footer*/
-$tamaniofooter: 50px;
-$paddingfooter: 20px;
-$espaciadotextofooter: 2;
-$tamaniotextofooter: 100px;
-$colorfooter: rgb(71, 29, 29);
+/*footer*/
+
+$tamanioFooter: 45px;
+$paddingFooter: 20px;
+$espaciadoTextoFooter: 2;
+$colorTextoFooter: rgb(151, 79, 69);
+$tamanioTextoFooter: 100px;
+$colorFooter: rgb(71, 29, 29);
+
+/*globales*/
+
+$fondoPagina: linear-gradient(#b48a99 20%, #300c0ce0 80%);
+$colorDentroDeCarta: white;
+
+/*nav*/
+
+$colorNav: #300c0c;
+$colorTextoNav: white;
+$colorBordeNav: black;
+$colorActual: #5c3434;
+
+/*Index*/
+
+$colorCard: rgba(100, 20, 17, 0.555);
+$altoCard: 150px;
+$anchoCard: 300px;
+$tamanioWelcome: 50px;
+$tamanioToMy: 15px;
+$tamanioAboutMe: 50px;
+$tamanioAboutMeTexto: 20px;

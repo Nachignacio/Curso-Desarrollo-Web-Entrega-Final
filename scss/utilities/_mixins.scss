@@ -8,7 +8,7 @@
 }
 
 @mixin footerintexto($ht, $left, $space){ /*hf: altura texto, left: ubicacion desde la izquierda, space: espaciado desde el centro*/
-    color: rgb(151, 79, 69);
+    color: $colorTextoFooter;
     display: inline;
     position: absolute;
     top: 35px;
