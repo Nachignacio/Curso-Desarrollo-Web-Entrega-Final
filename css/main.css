@@ -42,7 +42,7 @@ en siguiente bloque de codigo*/
   height: 45px;
   width: 45px;
   left: 50vw;
-  transform: translateX(-67.5px);
+  transform: translateX(calc(-45px / 2 + 45px * -1));
 }
 .wppimage img {
   height: 100%;
@@ -56,9 +56,255 @@ en siguiente bloque de codigo*/
   height: 45px;
   width: 45px;
   left: 50vw;
-  transform: translateX(22.5px);
+  transform: translateX(calc(-45px / 2 + 45px * 1));
 }
 .igimage img {
+  height: 100%;
+  width: 100%;
+}
+
+.socialmedia .recommendedTopRight {
+  margin-right: 10px;
+  border-top: solid;
+  padding-left: 15px;
+  grid-area: recommendedTopRight;
+  height: 1000px;
+  margin-top: 0px;
+  border-left: solid;
+}
+.socialmedia .recommendedTopRight p {
+  margin-bottom: 50px;
+  text-align: justify;
+}
+.socialmedia .recommendedTopRight h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+.socialmedia .recommendedTopRight #animenzVideo {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+.socialmedia .recommendedTopRight #animenzVideo iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.socialmedia .recommendedTopRight h3 {
+  margin-top: 30px;
+  position: relative;
+  top: 0px;
+  text-decoration: underline;
+  margin-bottom: 35px;
+  display: flex;
+}
+.socialmedia .recommendedTopRight .carousel .carousel-inner .carousel-item {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+.socialmedia .recommendedTopRight .carousel .carousel-inner .carousel-item iframe {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.socialmedia .recommendedBottom1 {
+  margin-right: 10px;
+  border-top: solid;
+  padding-left: 15px;
+  grid-area: recommendedBottom1;
+  height: 1000px;
+  margin-top: 0px;
+  border-left: solid;
+}
+.socialmedia .recommendedBottom1 p {
+  margin-bottom: 50px;
+  text-align: justify;
+}
+.socialmedia .recommendedBottom1 h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+.socialmedia .recommendedBottom1 #playerPianoVideo {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+.socialmedia .recommendedBottom1 #playerPianoVideo iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.socialmedia .recommendedBottom1 h3 {
+  margin-top: 30px;
+  position: relative;
+  top: 0px;
+  text-decoration: underline;
+  margin-bottom: 35px;
+  display: flex;
+}
+.socialmedia .recommendedBottom1 .carousel .carousel-inner .carousel-item {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+.socialmedia .recommendedBottom1 .carousel .carousel-inner .carousel-item iframe {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.socialmedia .recommendedBottom2 {
+  margin-right: 10px;
+  border-top: solid;
+  padding-left: 15px;
+  grid-area: recommendedBottom2;
+  height: 1000px;
+  margin-top: 0px;
+  border-left: solid;
+}
+.socialmedia .recommendedBottom2 p {
+  margin-bottom: 50px;
+  text-align: justify;
+}
+.socialmedia .recommendedBottom2 h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+.socialmedia .recommendedBottom2 #mysteryGuitarManVideo {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+.socialmedia .recommendedBottom2 #mysteryGuitarManVideo iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.socialmedia .recommendedBottom2 h3 {
+  margin-top: 30px;
+  position: relative;
+  top: 0px;
+  text-decoration: underline;
+  margin-bottom: 35px;
+  display: flex;
+}
+.socialmedia .recommendedBottom2 .carousel .carousel-inner .carousel-item {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+.socialmedia .recommendedBottom2 .carousel .carousel-inner .carousel-item iframe {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.socialmedia .recommendedBottom3 {
+  margin-right: 10px;
+  border-top: solid;
+  padding-left: 15px;
+  grid-area: recommendedBottom3;
+  height: 1000px;
+  margin-top: 0px;
+  border-left: solid;
+}
+.socialmedia .recommendedBottom3 p {
+  margin-bottom: 50px;
+  text-align: justify;
+}
+.socialmedia .recommendedBottom3 h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+.socialmedia .recommendedBottom3 #mrPianoMinionVideo {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+.socialmedia .recommendedBottom3 #mrPianoMinionVideo iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.socialmedia .recommendedBottom3 h3 {
+  margin-top: 30px;
+  position: relative;
+  top: 0px;
+  text-decoration: underline;
+  margin-bottom: 35px;
+  display: flex;
+}
+.socialmedia .recommendedBottom3 .carousel .carousel-inner .carousel-item {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+.socialmedia .recommendedBottom3 .carousel .carousel-inner .carousel-item iframe {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.socialmedia .recommendedBottom4 {
+  margin-right: 10px;
+  border-top: solid;
+  padding-left: 15px;
+  grid-area: recommendedBottom4;
+  height: 1000px;
+  margin-top: 0px;
+  border-left: solid;
+}
+.socialmedia .recommendedBottom4 p {
+  margin-bottom: 50px;
+  text-align: justify;
+}
+.socialmedia .recommendedBottom4 h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+.socialmedia .recommendedBottom4 #jaimeAltozanoVideo {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+.socialmedia .recommendedBottom4 #jaimeAltozanoVideo iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.socialmedia .recommendedBottom4 h3 {
+  margin-top: 30px;
+  position: relative;
+  top: 0px;
+  text-decoration: underline;
+  margin-bottom: 35px;
+  display: flex;
+}
+.socialmedia .recommendedBottom4 .carousel .carousel-inner .carousel-item {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+.socialmedia .recommendedBottom4 .carousel .carousel-inner .carousel-item iframe {
+  position: absolute;
+  top: 0px;
+  left: 0;
   height: 100%;
   width: 100%;
 }
@@ -365,15 +611,19 @@ body h1 p {
 /*Para darle un espacio entre el primer texto de Contacts con el navegador, y margen al texto*/
 .socialmedia {
   display: grid;
-  grid-template-areas: "socialMedia recommended" "form recommended";
-  grid-column-gap: 15px;
-  grid-row-gap: 15px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 5fr 5fr;
+  grid-template-areas: "socialMedia recommendedTopRight" "form recommendedTopRight" "recommendedBottom1 recommendedBottom2" "recommendedBottom3 recommendedBottom4";
   margin-left: 20px;
   margin-top: 20px;
+  grid-gap: 0;
 }
 .socialmedia div {
   grid-area: socialMedia;
   /*Para ordenar los items "Instagram, YouTube, etc..."*/
+}
+.socialmedia div p {
+  margin-bottom: 50px;
 }
 .socialmedia div #socialmedialist {
   display: flex;
@@ -406,62 +656,84 @@ body h1 p {
   height: 40px;
   margin-right: 10px;
 }
-.socialmedia form {
+.socialmedia .sectionForm {
   grid-area: form;
+  height: 800px;
+}
+.socialmedia .sectionForm form {
   /*Espaciado entre zonas de texto en formulario de Contacts*/
 }
-.socialmedia form div {
+.socialmedia .sectionForm form div {
   padding-top: 20px;
   padding-right: 20px;
-}
-.socialmedia .recommended {
-  margin-right: 50px;
-  border-left: solid;
-  padding-left: 15px;
-  grid-area: recommended;
-  height: 100%;
-}
-.socialmedia .recommended p {
-  margin-bottom: 50px;
-}
-.socialmedia .recommended h2 {
-  text-align: center;
-  text-decoration: underline;
-}
-.socialmedia .recommended #firstVideo {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  margin-bottom: 100px;
-}
-.socialmedia .recommended #firstVideo iframe {
-  position: absolute;
-  top: 50px;
-  left: 0;
-  height: 100%;
-  width: 100%;
-}
-.socialmedia .recommended h3 {
-  position: relative;
-  top: 0px;
-  text-decoration: underline;
-  margin-bottom: 35px;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
 }
-.socialmedia .recommended .carousel .carousel-inner .carousel-item {
+.socialmedia .sectionForm form div h4 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+.socialmedia .sectionForm form div input {
+  border: solid;
+  border-radius: 8px;
+  box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.75);
+  text-align: center;
+}
+.socialmedia .sectionForm form div textarea {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: solid;
+  border-radius: 8px;
+  box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.75);
+}
+.socialmedia .sectionForm form #botones {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.socialmedia .sectionForm form #botones input {
+  border: double;
+  padding: 0px 10px 0px 10px;
+  border-radius: 3px;
+  border-width: thick;
+}
+.socialmedia .recommendedTopRight {
+  height: 1350px;
+  margin-top: 0;
+  border-top: none;
+  border-left: solid;
+}
+.socialmedia .recommendedTopRight p {
+  margin-top: 20px;
+  text-align: justify;
+}
+.socialmedia .recommendedBottom1 {
+  margin-right: -5px;
+  border-left: none;
+  padding-right: 20px;
+}
+.socialmedia .recommendedBottom3 {
   position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  margin-bottom: 100px;
+  top: 500px;
+  margin-top: -127px;
+  margin-right: -3px;
+  border-left: none;
+  padding-right: 20px;
 }
-.socialmedia .recommended .carousel .carousel-inner .carousel-item iframe {
-  position: absolute;
-  top: 0px;
-  left: 0;
-  height: 100%;
-  width: 100%;
+.socialmedia .recommendedBottom4 {
+  margin-top: -127px;
+  margin-right: -5px;
+  border-left: none;
+  padding-right: 20px;
 }
 
+/*Se configuran todas las posiciones de videos en el partial loops*/
 /*Espaciado entre navegador y primer texto en Requests*/
 .requests {
   margin-left: 20px;
@@ -664,7 +936,7 @@ footer .wpptext {
   position: absolute;
   top: 35px;
   left: 50vw;
-  transform: translateX(-250px);
+  transform: translateX(-220px);
   font-weight: bold;
 }
 footer .igtext {
@@ -674,7 +946,7 @@ footer .igtext {
   position: absolute;
   top: 35px;
   left: 50vw;
-  transform: translateX(110px);
+  transform: translateX(77.5px);
 }
 footer .igtext a {
   position: absolute;

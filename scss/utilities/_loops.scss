@@ -1,14 +1,67 @@
-$social: (
-        wpp: -1,
-        ig: 1
-    );
-    
 @each $s, $v in $social{
     .#{$s}image{
-        @include footerin($tamanioFooter, 50vw, $v);
+        @include footerin($tamanioFooter, 50vw, #{$v});
         img{
             height: 100%;
             width: 100%;
+        }
+    }
+}
+
+.socialmedia{
+    @each $gridPosition, $channel in $artistsGrid{
+        .#{$gridPosition}{
+            margin-right: 10px;
+            border-top: solid;
+            padding-left: 15px;
+            grid-area: #{$gridPosition};
+            height: 1000px;
+            margin-top: 0px;
+            border-left: solid;
+            p{
+                margin-bottom: 50px;
+                text-align: justify;
+            }
+            h2{
+                text-align: center;
+                text-decoration: underline;
+            }
+            ##{$channel}{
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                iframe{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+            h3{
+                margin-top: 30px;
+                position: relative;
+                top: 0px;
+                text-decoration: underline;
+                margin-bottom: 35px;
+                display: flex;
+            }
+            .carousel{
+                .carousel-inner{
+                    .carousel-item{
+                        position: relative;
+                        padding-bottom: 56.25%;
+                        height: 0;
+                        iframe{
+                            position: absolute;
+                            top: 0px;
+                            left: 0;
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
         }
     }
 }

@@ -1,16 +1,22 @@
 /*Para darle un espacio entre el primer texto de Contacts con el navegador, y margen al texto*/
 .socialmedia {
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 5fr 5fr;
     grid-template-areas:
-    "socialMedia recommended"
-    "form recommended";
-    grid-column-gap: 15px;
-    grid-row-gap: 15px;
+    "socialMedia recommendedTopRight"
+    "form recommendedTopRight"
+    "recommendedBottom1 recommendedBottom2"
+    "recommendedBottom3 recommendedBottom4";
     margin-left: 20px;
     margin-top: 20px;
+    grid-gap: 0;
     div {
         grid-area: socialMedia;
         /*Para ordenar los items "Instagram, YouTube, etc..."*/
+        p{
+            margin-bottom: 50px;
+        }
         #socialmedialist {
             display: flex;
             flex-direction: row;
@@ -43,63 +49,82 @@
             }
         }
     }
-    form {
+    .sectionForm{
         grid-area: form;
-        /*Espaciado entre zonas de texto en formulario de Contacts*/
-        div {
-            padding-top: 20px;
-            padding-right: 20px;
-        }
-    }
-    .recommended{
-        margin-right: 50px;
-        border-left: solid;
-        padding-left: 15px;
-        grid-area: recommended;
-        height: 100%;
-        p{
-            margin-bottom: 50px;
-        }
-        h2{
-            text-align: center;
-            text-decoration: underline;
-        }
-        #firstVideo{
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            margin-bottom: 100px;
-            iframe{
-                position: absolute;
-                top: 50px;
-                left: 0;
-                height: 100%;
-                width: 100%;
+        height: 800px;
+        form {
+            /*Espaciado entre zonas de texto en formulario de Contacts*/
+            div {
+                padding-top: 20px;
+                padding-right: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: justify;
+                h4{
+                    margin-bottom: 15px;
+                    text-align: center;
+                }
+                input{
+                    border: solid;
+                    border-radius: 8px;
+                    box-shadow: 10px 10px 24px 0px rgba(0,0,0,0.75);
+                    -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);
+                    -moz-box-shadow: 10px 10px 24px 0px rgba(0,0,0,0.75);
+                    text-align: center;
+                }
+                textarea{
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                    border: solid;
+                    border-radius: 8px;
+                    box-shadow: 10px 10px 24px 0px rgba(0,0,0,0.75);
+                    -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);
+                    -moz-box-shadow: 10px 10px 24px 0px rgba(0,0,0,0.75);
+                }
             }
-        }
-        h3{
-            position: relative;
-            top: 0px;
-            text-decoration: underline;
-            margin-bottom: 35px;
-            display: flex;
-        }
-        .carousel{
-            .carousel-inner{
-                .carousel-item{
-                    position: relative;
-                    padding-bottom: 56.25%;
-                    height: 0;
-                    margin-bottom: 100px;
-                    iframe{
-                        position: absolute;
-                        top: 0px;
-                        left: 0;
-                        height: 100%;
-                        width: 100%;
-                    }
+            #botones{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+            input{
+                border: double;
+                padding: 0px 10px 0px 10px;
+                border-radius: 3px;
+                border-width: thick;
                 }
             }
         }
     }
+    .recommendedTopRight{
+        height: 1350px;
+        margin-top: 0;
+        p{
+            margin-top: 20px;
+            text-align: justify;
+        }
+        border-top: none;
+        border-left: solid;
+    }
+    .recommendedBottom1{
+        margin-right: -5px;
+        border-left: none;
+        padding-right: 20px;
+    }
+    .recommendedBottom3{
+        position: relative;
+        top: 500px;
+        margin-top: -127px;
+        margin-right: -3px;
+        border-left: none;
+        padding-right: 20px;
+    }
+    .recommendedBottom4{
+        margin-top: -127px;
+        margin-right: -5px;
+        border-left: none;
+        padding-right: 20px;
+    }
 }
+
+/*Se configuran todas las posiciones de videos en el partial loops*/

@@ -23,7 +23,7 @@ footer{
         }
         .igtext{
             
-            @include footerintexto($tamanioTextoFooter, 50vw, 0.8*$espaciadoTextoFooter);
+            @include footerintexto($tamanioTextoFooter, 50vw, 0.75*$espaciadoTextoFooter);
             a{
                 position: absolute;
                 top: -5px;
