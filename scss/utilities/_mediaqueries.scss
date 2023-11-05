@@ -13,6 +13,12 @@
             }
         }
         footer{
+            .wpptext{
+                @include footerintexto($tamanioTextoFooter, 50vw, - 1.35 * $espaciadoTextoFooter);
+                left: 3.6*$tamanioTextoFooter;
+                width: 50vw;
+                font-weight: bold;
+            }
             height: 3*$tamanioFooter;
             .wppimage{
                 left: 2*$tamanioFooter;
@@ -23,35 +29,74 @@
     /*Le doy el espacio de una imagen, mas el padding mas el espacio entre imagenes*/
                 top: $tamanioFooter + 20px + 15px;
             }
-            .wpptext{
-                left: 3.6*$tamanioTextoFooter;
-                width: 50vw;
-            }
             .igtext{
                 width: 50vw;
                 left: 0;
                 top: $tamanioFooter + 20px + 25px;
             }
         }
-    }
-    .navDesktop {
-        display: none;
-    }
-    #navbarBurger {
-        position: sticky;
-        top: 0px;
-        label{
-            width: 100vw;
-            z-index: 999;
+        .socialMedia{
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr, 1fr, repeat(5,2fr);
+            grid-template-areas:
+            "socialMedia"
+            "form"
+            "recommendedTopRight"
+            "recommendedBottom1"
+            "recommendedBottom2"
+            "recommendedBottom3"
+            "recommendedBottom4";
+                .sectionForm{
+                    margin-bottom: -50px;
+                    form{
+                        input{
+                            padding-bottom: 0px;
+                        }
+                    }
+                }
+                .recommendedTopRight{
+                    position: relative;
+                    margin-top: 0px;
+                    width: 100%;
+                    p{
+                        margin-top: -85px;
+                        margin-bottom: 150px;
+                    }
+                    border-left: none;
+                }
+                .recommendedBottom1{
+                    border-left: none;
+                }
+                .recommendedBottom2{
+                    border-left: none;
+                }
+                .recommendedBottom3{
+                    border-left: none;
+                }
+                .recommendedBottom4{
+                    border-left: none;
+                }
+            }
+        #navbarBurger {
+            .navDesktop {
+                display: none;
+            }
+            position: sticky;
+            top: 0px;
+            label{
+                width: 100vw;
+                z-index: 999;
+            }
         }
-    }
-    .uploads {
-        .iframeuploads {
-            iframe {
-                width: 72vw;
+        .uploads {
+            .iframeuploads {
+                iframe {
+                    width: 72vw;
+                }
             }
         }
     }
+    $espaciadoTextoFooter: 2;
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -61,14 +106,52 @@
             width: 35%;
         }
     }
-
-    .navDesktop {
-        display: none;
+    .socialMedia{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr, 1fr, repeat(5,2fr);
+    grid-template-areas:
+    "socialMedia"
+    "form"
+    "recommendedTopRight"
+    "recommendedBottom1"
+    "recommendedBottom2"
+    "recommendedBottom3"
+    "recommendedBottom4";
+        .sectionForm{
+            margin-bottom: -50px;
+            form{
+                input{
+                    padding-bottom: 0px;
+                }
+            }
+        }
+        .recommendedTopRight{
+            margin-top: 0;
+            p{
+                margin-top: -250px;
+                margin-bottom: 150px;
+            }
+            border-left: none;
+        }
+        .recommendedBottom1{
+            border-left: none;
+        }
+        .recommendedBottom2{
+            border-left: none;
+        }
+        .recommendedBottom3{
+            border-left: none;
+        }
+        .recommendedBottom4{
+            border-left: none;
+        }
     }
-
     .navbar {
         position: sticky;
         top: 0px;
+        .navDesktop {
+            display: none;
+        }
     }
 
     .show {

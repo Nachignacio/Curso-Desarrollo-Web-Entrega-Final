@@ -74,7 +74,7 @@ nav {
     top: 0;
 
     /*Uso display:flex para ubiar los botones y que ocupen todo el vw*/
-    ul {
+    .navDesktop{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -83,6 +83,9 @@ nav {
         border: 0;
         margin-bottom: 0;
         li {
+            display: flex;
+            align-items: center;
+            text-justify: center;
             /*Formato de los botones para el nav*/
             border-style: none;
             font-family: Carena-Regular;
@@ -92,11 +95,14 @@ ocupe la totalidad del ancho de la pagina*/
             width: 100%;
             /*Quiero que el texto en los botones este con justificacion en el centro*/
             text-align: center;
-
             a {
+                padding-left: 50px; /*eSTE PADDING ES PARA CENTRAR LOS BOTONES*/
+                padding-right: 50px;
                 button {
+                    
                     /*Modifico boton*/
                     margin: 7px;
+                    
                 }
             }
         }

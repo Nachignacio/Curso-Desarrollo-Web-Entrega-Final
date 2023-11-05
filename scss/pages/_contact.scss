@@ -1,5 +1,5 @@
 /*Para darle un espacio entre el primer texto de Contacts con el navegador, y margen al texto*/
-.socialmedia {
+.socialMedia {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 5fr 5fr;
@@ -11,13 +11,14 @@
     margin-left: 20px;
     margin-top: 20px;
     grid-gap: 0;
-    div {
+    div{
         grid-area: socialMedia;
         /*Para ordenar los items "Instagram, YouTube, etc..."*/
         p{
             margin-bottom: 50px;
         }
-        #socialmedialist {
+        height: 5%;
+        #socialMediaList {
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
@@ -97,34 +98,18 @@
         }
     }
     .recommendedTopRight{
-        height: 1350px;
-        margin-top: 0;
+        margin-top: 0px;
+        border-top: none;
         p{
             margin-top: 20px;
             text-align: justify;
         }
-        border-top: none;
-        border-left: solid;
     }
     .recommendedBottom1{
-        margin-right: -5px;
         border-left: none;
-        padding-right: 20px;
     }
     .recommendedBottom3{
-        position: relative;
-        top: 500px;
-        margin-top: -127px;
-        margin-right: -3px;
         border-left: none;
-        padding-right: 20px;
-    }
-    .recommendedBottom4{
-        margin-top: -127px;
-        margin-right: -5px;
-        border-left: none;
-        padding-right: 20px;
     }
 }
-
 /*Se configuran todas las posiciones de videos en el partial loops*/
