@@ -50,18 +50,17 @@
                 text-align: center;
             }
             .carousel{
-                .carousel-control-next, .carousel-control-prev{
+                /*.carousel-control-next, .carousel-control-prev{
                     margin: 150px;  /*No me esta saliendo solucionar este problema. Las flechas del carrusel no me quedan bien posicionadas por defecto a la mitad de la altura de los iframe*/
-                }
+                /*}*/
                 .carousel-inner{
                     .carousel-item{
-                        display: flex;
-                        justify-content: center;
                         position: relative;
                         padding-bottom: 56.25%;
                         iframe{
                             position: absolute;
-                            top: 0px;
+                            top: 0;
+                            left:0;
                             height: 100%;
                             width: 100%;
                         }

@@ -4,8 +4,8 @@
     height: $hf;
     width: $hf;
     left: $left;
-    $transformValue: calc(-#{$hf} / 2 + #{$hf}*#{$space});
-    transform: translateX($transformValue);
+    $transformValue1: calc(-#{$hf} / 2 + #{$hf}*#{$space});
+    transform: translateX($transformValue1);
 }
 
 @mixin footerintexto($ht, $left, $space){ /*hf: altura texto, left: ubicacion desde la izquierda, space: espaciado desde el centro*/
@@ -14,5 +14,6 @@
     position: absolute;
     top: 35px;
     left: $left;
-    transform: translateX(-$ht/2+$ht*$space);
+    $transformValue2: calc(-#{$ht} / 2 + #{$ht}*#{$space});
+    transform: translateX($transformValue2);
 }

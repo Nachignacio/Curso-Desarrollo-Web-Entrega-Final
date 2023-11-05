@@ -17,7 +17,6 @@
         p{
             margin-bottom: 50px;
         }
-        height: 5%;
         #socialMediaList {
             display: flex;
             flex-direction: row;
@@ -104,6 +103,12 @@
             margin-top: 20px;
             text-align: justify;
         }
+        h3{
+            top: 2%; /*Para que se ubique un poco mejor*/
+        }
+        .carousel{
+            top: 2%; /*Para que se ubique un poco mejor respecto a los bordes del grid*/
+        }
     }
     .recommendedBottom1{
         border-left: none;
@@ -112,4 +117,6 @@
         border-left: none;
     }
 }
+
+
 /*Se configuran todas las posiciones de videos en el partial loops*/
