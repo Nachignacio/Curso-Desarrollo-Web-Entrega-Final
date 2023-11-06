@@ -38,8 +38,8 @@
                 iframe{
                     justify-self: center;
                     position: absolute;
-                    height: 100%;
-                    width: 100%;
+                    height: 80%;
+                    width: 80%;
                 }
             }
             h3{
@@ -50,9 +50,21 @@
                 text-align: center;
             }
             .carousel{
-                /*.carousel-control-next, .carousel-control-prev{
-                    margin: 150px;  /*No me esta saliendo solucionar este problema. Las flechas del carrusel no me quedan bien posicionadas por defecto a la mitad de la altura de los iframe*/
-                /*}*/
+                height: 50%;
+                margin: 10%;
+                margin-bottom: 0;
+                height: 80%;
+                width: 80%;
+                z-index: 0; /*Para evitar que las flechas se solapen con el footer*/
+                button{
+                    height: 35%;
+                }
+                .carousel-control-next{
+                    right: -12%;
+                }
+                .carousel-control-prev{
+                    left: -12%;
+                }
                 .carousel-inner{
                     .carousel-item{
                         position: relative;

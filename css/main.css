@@ -92,8 +92,8 @@ en siguiente bloque de codigo*/
 .socialMedia .recommendedTopRight #animenzVideo iframe {
   justify-self: center;
   position: absolute;
-  height: 100%;
-  width: 100%;
+  height: 80%;
+  width: 80%;
 }
 .socialMedia .recommendedTopRight h3 {
   margin-top: 30px;
@@ -103,9 +103,21 @@ en siguiente bloque de codigo*/
   text-align: center;
 }
 .socialMedia .recommendedTopRight .carousel {
-  /*.carousel-control-next, .carousel-control-prev{
-      margin: 150px;  /*No me esta saliendo solucionar este problema. Las flechas del carrusel no me quedan bien posicionadas por defecto a la mitad de la altura de los iframe*/
-  /*}*/
+  height: 50%;
+  margin: 10%;
+  margin-bottom: 0;
+  height: 80%;
+  width: 80%;
+  z-index: 0; /*Para evitar que las flechas se solapen con el footer*/
+}
+.socialMedia .recommendedTopRight .carousel button {
+  height: 35%;
+}
+.socialMedia .recommendedTopRight .carousel .carousel-control-next {
+  right: -12%;
+}
+.socialMedia .recommendedTopRight .carousel .carousel-control-prev {
+  left: -12%;
 }
 .socialMedia .recommendedTopRight .carousel .carousel-inner .carousel-item {
   position: relative;
@@ -146,8 +158,8 @@ en siguiente bloque de codigo*/
 .socialMedia .recommendedBottom1 #playerPianoVideo iframe {
   justify-self: center;
   position: absolute;
-  height: 100%;
-  width: 100%;
+  height: 80%;
+  width: 80%;
 }
 .socialMedia .recommendedBottom1 h3 {
   margin-top: 30px;
@@ -157,9 +169,21 @@ en siguiente bloque de codigo*/
   text-align: center;
 }
 .socialMedia .recommendedBottom1 .carousel {
-  /*.carousel-control-next, .carousel-control-prev{
-      margin: 150px;  /*No me esta saliendo solucionar este problema. Las flechas del carrusel no me quedan bien posicionadas por defecto a la mitad de la altura de los iframe*/
-  /*}*/
+  height: 50%;
+  margin: 10%;
+  margin-bottom: 0;
+  height: 80%;
+  width: 80%;
+  z-index: 0; /*Para evitar que las flechas se solapen con el footer*/
+}
+.socialMedia .recommendedBottom1 .carousel button {
+  height: 35%;
+}
+.socialMedia .recommendedBottom1 .carousel .carousel-control-next {
+  right: -12%;
+}
+.socialMedia .recommendedBottom1 .carousel .carousel-control-prev {
+  left: -12%;
 }
 .socialMedia .recommendedBottom1 .carousel .carousel-inner .carousel-item {
   position: relative;
@@ -200,8 +224,8 @@ en siguiente bloque de codigo*/
 .socialMedia .recommendedBottom2 #danielThrasherVideo iframe {
   justify-self: center;
   position: absolute;
-  height: 100%;
-  width: 100%;
+  height: 80%;
+  width: 80%;
 }
 .socialMedia .recommendedBottom2 h3 {
   margin-top: 30px;
@@ -211,9 +235,21 @@ en siguiente bloque de codigo*/
   text-align: center;
 }
 .socialMedia .recommendedBottom2 .carousel {
-  /*.carousel-control-next, .carousel-control-prev{
-      margin: 150px;  /*No me esta saliendo solucionar este problema. Las flechas del carrusel no me quedan bien posicionadas por defecto a la mitad de la altura de los iframe*/
-  /*}*/
+  height: 50%;
+  margin: 10%;
+  margin-bottom: 0;
+  height: 80%;
+  width: 80%;
+  z-index: 0; /*Para evitar que las flechas se solapen con el footer*/
+}
+.socialMedia .recommendedBottom2 .carousel button {
+  height: 35%;
+}
+.socialMedia .recommendedBottom2 .carousel .carousel-control-next {
+  right: -12%;
+}
+.socialMedia .recommendedBottom2 .carousel .carousel-control-prev {
+  left: -12%;
 }
 .socialMedia .recommendedBottom2 .carousel .carousel-inner .carousel-item {
   position: relative;
@@ -254,8 +290,8 @@ en siguiente bloque de codigo*/
 .socialMedia .recommendedBottom3 #mrPianoMinionVideo iframe {
   justify-self: center;
   position: absolute;
-  height: 100%;
-  width: 100%;
+  height: 80%;
+  width: 80%;
 }
 .socialMedia .recommendedBottom3 h3 {
   margin-top: 30px;
@@ -265,9 +301,21 @@ en siguiente bloque de codigo*/
   text-align: center;
 }
 .socialMedia .recommendedBottom3 .carousel {
-  /*.carousel-control-next, .carousel-control-prev{
-      margin: 150px;  /*No me esta saliendo solucionar este problema. Las flechas del carrusel no me quedan bien posicionadas por defecto a la mitad de la altura de los iframe*/
-  /*}*/
+  height: 50%;
+  margin: 10%;
+  margin-bottom: 0;
+  height: 80%;
+  width: 80%;
+  z-index: 0; /*Para evitar que las flechas se solapen con el footer*/
+}
+.socialMedia .recommendedBottom3 .carousel button {
+  height: 35%;
+}
+.socialMedia .recommendedBottom3 .carousel .carousel-control-next {
+  right: -12%;
+}
+.socialMedia .recommendedBottom3 .carousel .carousel-control-prev {
+  left: -12%;
 }
 .socialMedia .recommendedBottom3 .carousel .carousel-inner .carousel-item {
   position: relative;
@@ -308,8 +356,8 @@ en siguiente bloque de codigo*/
 .socialMedia .recommendedBottom4 #jaimeAltozanoVideo iframe {
   justify-self: center;
   position: absolute;
-  height: 100%;
-  width: 100%;
+  height: 80%;
+  width: 80%;
 }
 .socialMedia .recommendedBottom4 h3 {
   margin-top: 30px;
@@ -319,9 +367,21 @@ en siguiente bloque de codigo*/
   text-align: center;
 }
 .socialMedia .recommendedBottom4 .carousel {
-  /*.carousel-control-next, .carousel-control-prev{
-      margin: 150px;  /*No me esta saliendo solucionar este problema. Las flechas del carrusel no me quedan bien posicionadas por defecto a la mitad de la altura de los iframe*/
-  /*}*/
+  height: 50%;
+  margin: 10%;
+  margin-bottom: 0;
+  height: 80%;
+  width: 80%;
+  z-index: 0; /*Para evitar que las flechas se solapen con el footer*/
+}
+.socialMedia .recommendedBottom4 .carousel button {
+  height: 35%;
+}
+.socialMedia .recommendedBottom4 .carousel .carousel-control-next {
+  right: -12%;
+}
+.socialMedia .recommendedBottom4 .carousel .carousel-control-prev {
+  left: -12%;
 }
 .socialMedia .recommendedBottom4 .carousel .carousel-inner .carousel-item {
   position: relative;
@@ -528,9 +588,9 @@ nav .navDesktop li a button {
 /*Termina código importado*/
 /*Comienza lo que contiene body*/
 body {
-  background-image: linear-gradient(#b48a99, rgba(49, 20, 20, 0.8784313725));
+  background-image: linear-gradient(#b48a99, rgba(92, 69, 69, 0.8784313725));
   background-repeat: no-repeat;
-  padding-bottom: 85px;
+  padding-bottom: 0;
   /*Es necesario agregar este estilo para que el gradiente se me extienda por toda la página*/
   background-attachment: fixed;
 }
@@ -1044,11 +1104,13 @@ footer {
   text-align: center;*/
   position: fixed;
   background-color: rgb(71, 29, 29);
+  z-index: 20;
   /*height: $tamaniofooter;*/
   bottom: 0;
   width: 100vw;
   padding: 20px 0 20px 0;
   height: 85px;
+  z-index: 9;
   /*Hice el mixin footerin para que centre dentro del footer*/
   /*Hice el mixin footerintexto para que centre dentro del footer*/
 }
